@@ -41,7 +41,12 @@ window.addEventListener('load', () => { //mostrar todos
 
   document.getElementById('fetch-one').addEventListener('click', () => {
 
-
+    document.querySelector('.characters-container').innerHTML = `<div class="character-info">
+      <div class="name">Name</div>
+      <div class="occupation">Occupation:</div>
+      <div class="cartoon">Is a Cartoon?</div>
+      <div class="weapon">Character Weapon:</div>
+    </div>`
 
     let id = document.querySelectorAll('.operation input')[0].value
 
